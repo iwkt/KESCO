@@ -1,0 +1,726 @@
+* {
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+} 
+/*
+*:after {
+  background-repeat: no-repeat;
+  box-sizing: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+}
+*:before {
+  background-repeat: no-repeat;
+  box-sizing: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+} */
+
+*, .col {
+  margin: 0;
+  padding: 0;
+}
+
+*, .grid {
+  margin: 0;
+  padding: 0;
+} 
+
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: Verdana,"Hiragino Kaku Gothic Pro","Meiryo","MS PGothic", sans-serif;
+  font-size: 14px;
+}
+
+/* div[class*="col"] {
+  margin: 0;
+  padding: 0;
+} */
+
+[class*=col-], [class*=col_], [class~=col] {
+  padding: 0;
+  margin: 0;
+}
+
+[class*=grid-], [class*=grid_], [class~=grid] {
+  padding: 0;
+  margin: 0;
+}
+
+/* div[class*="grid"] {
+  margin: 0;
+  padding: 0;
+}
+
+div[class~="col"] {
+  margin: 0;
+  padding: 0;
+}
+
+div[class~="grid"] {
+  margin: 0;
+  padding: 0;
+} */
+
+/* 
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+::-webkit-file-upload-button {
+  font: inherit;
+  -webkit-appearance: button;
+}
+
+
+[aria-busy="true"] {
+  cursor: progress;
+}
+
+[aria-controls] {
+  cursor: pointer;
+}
+
+[aria-disabled] {
+  cursor: default;
+}
+
+[disabled] {
+  cursor: not-allowed;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+[role="button"] {
+  cursor: pointer;
+}
+
+[type="button"] {
+  cursor: pointer;
+  padding: 0;
+}
+
+[type="file"] {
+  cursor: pointer;
+  padding: 0;
+}
+
+[type="number"] {
+  width: auto;
+}
+
+[type="reset"] {
+  cursor: pointer;
+}
+
+[type="search"] {
+  outline-offset: -2px;
+  -webkit-appearance: textfield;
+}
+[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+[type="submit"] {
+  cursor: pointer;
+  padding: 0;
+}
+
+*/
+a {
+  background-color: transparent;
+  border: 0;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  -webkit-text-decoration-skip: objects;
+}
+a:active {
+  outline-width: 0;
+}
+a:hover {
+  outline-width: 0;
+}
+a:visited {
+  color: inherit;
+}
+/*
+
+address {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+article {
+  border: 0;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+aside {
+  border: 0;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+audio {
+  border: 0;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+blockquote {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  quotes: none;
+}
+blockquote:after {
+  content: "";
+  content: none;
+}
+blockquote:before {
+  content: "";
+  content: none;
+}
+
+body {
+  border: 0;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: transparent;
+  border-style: none;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  overflow: visible;
+  padding: 0;
+  text-transform: none;
+}
+
+canvas {
+  border: 0;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+caption {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+code {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+dd {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+details {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+dl {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+dt {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+figcaption {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  border: 0;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  border: 0;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  border: 0;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  border: 0;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  border: 0;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+h5 {
+  border: 0;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+h6 {
+  border: 0;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  border: 0;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  border: 0;   
+  border-top: 1px solid #cccccc;
+  display: block;
+  height: 1px;
+  margin: 1rem 0;
+  overflow: visible;
+  padding: 0;
+}
+*/
+html {
+  border: 0;
+  /* font-size: 62.5%; */
+  font-size: 16px;
+  margin: 0;
+  /* overflow-y: scroll; */
+  padding: 0;
+  /* -webkit-text-size-adjust: 100%; */
+}
+/*
+
+iframe {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border: 0;
+  border-style: none;
+  margin: 0;
+  max-width: 100%;
+  padding: 0;
+}
+
+input {
+  background-color: transparent;
+  border-radius: 0;
+  border-style: none;
+  color: inherit;
+  font: inherit;
+  vertical-align: middle;
+}
+
+label {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  border: 0;
+  color: inherit;
+  display: table;
+  margin: 0;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+li {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  border: 0;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  border: 0;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+ol {
+  border: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+pre {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+q {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  quotes: none;
+}
+q:after {
+  content: "";
+  content: none;
+}
+q:before {
+  content: "";
+  content: none;
+}
+
+section {
+  border: 0;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+select {
+  background-color: transparent;
+  border-style: none;
+  color: inherit;
+  font: inherit;
+  -moz-appearance: none;
+  text-transform: none;
+  vertical-align: middle;
+  -webkit-appearance: none;
+}
+select::-ms-expand {
+  display: none;
+}
+select::-ms-value {
+  color: currentColor;
+}
+
+span {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+summary {
+  border: 0;
+  display: list-item;
+  margin: 0;
+  padding: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+table {
+  border: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0;
+  padding: 0;
+}
+
+tbody {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+td {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  background-color: transparent;
+  border: 0;
+  border-style: none;
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  overflow: auto;
+  padding: 0;
+  resize: vertical;
+}
+
+tfoot {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+th {
+  border: 0;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+thead {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+tr {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  border: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+video {
+  border: 0;
+  display: inline-block;
+  margin: 0;
+  max-width: 100%;
+  padding: 0;
+}
+
+
+@media screen {
+  [hidden~="screen"] {
+    display: inherit;
+  }
+  [hidden~="screen"]:not(:active):not(:focus):not(:target) {
+    clip: rect(0 0 0 0) !important;
+    position: absolute !important;
+  }
+} */
+
+/* 付け足し */
+/*要素のフォントサイズやマージン・パディングをリセットしています*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/*行の高さをフォントサイズと同じにしています*/
+body {
+    line-height:1;
+}
+
+/*新規追加要素のデフォルトはすべてインライン要素になっているので、section要素などをブロック要素へ変更しています*/
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+/*nav要素内ulのマーカー（行頭記号）を表示しないようにしています*/
+/*nav ul {
+    list-style:none;
+}*/
+ol, ul {
+    list-style: none;
+}
+
+/*引用符の表示が出ないようにしています*/
+blockquote, q {
+    quotes:none;
+}
+
+/*blockquote要素、q要素の前後にコンテンツを追加しないように指定しています*/
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+/*a要素のフォントサイズなどをリセットしフォントの縦方向の揃え位置を親要素のベースラインに揃えるようにしています*/
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* ins要素のデフォルトをセットし、色を変える場合はここで変更できるようにしています */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* mark要素のデフォルトをセットし、色やフォントスタイルを変える場合はここで変更できるようにしています
+また、mark要素とは、文書内の検索結果で該当するフレーズをハイライトして、目立たせる際に使用するようです。*/
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+/*テキストに打ち消し線が付くようにしています*/
+del {
+    text-decoration: line-through;
+}
+
+/*IEではデフォルトで点線を下線表示する設定ではないので、下線がつくようにしています
+また、マウスオーバー時にヘルプカーソルの表示が出るようにしています*/
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+/*隣接するセルのボーダーを重ねて表示し、間隔を0に指定しています*/
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/*水平罫線のデフォルトである立体的な罫線を見えなくしています*/
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+/*縦方向の揃え位置を中央揃えに指定しています*/
+input, select {
+    vertical-align:middle;
+}
+
+/*画像を縦に並べた時に余白が出ないように*/
+img {
+    vertical-align: top;
+    font-size: 0;
+    line-height: 0;
+    max-width: 100%;
+}
+
+/*box-sizingを全ブラウザに対応*/
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
