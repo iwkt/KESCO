@@ -1,6 +1,8 @@
+@charset "UTF-8";
 * {
   -webkit-font-feature-settings: "palt" 1;
           font-feature-settings: "palt" 1;
+  font-family: noto,"ヒラギノ角ゴ Pro W3",Hiragino Kaku Gothic Pro,"メイリオ",Meiryo,"ＭＳ Ｐゴシック",MS PGothic,sans-serif;
 }
 
 .acd__parent__ttl {
@@ -16,13 +18,25 @@
   height: 190px;
 }
 
+.white_btn {
+  text-align: center;
+}
+
+.white_btn a {
+  border: 1px solid #fff;
+  display: inline-block;
+  padding: 4% 10%;
+  letter-spacing: 3px;
+  font-size: 3.5vw;
+}
+
 .cth__copy {
   color: #fff;
 }
 
 .cth__copy__bk {
   position: absolute;
-  top: 10vh;
+  top: 7%;
   background: linear-gradient(-65deg, #0078ff, #69ddff);
   width: 100%;
   height: 100%;
@@ -62,8 +76,8 @@
 
 .cth__copy__ttl__sub {
   letter-spacing: .2rem;
-  line-height: 2.2rem;
-  font-size: 28px;
+  line-height: 130%;
+  font-size: 7vw;
   font-family: YuMincho;
   margin-bottom: 30px;
 }
@@ -72,6 +86,11 @@
   font-size: .85rem;
   letter-spacing: 0.1rem;
   line-height: 1.7rem;
+  padding-left: 15%;
+}
+
+.cth__copy__wrapper {
+  margin-bottom: 10%;
 }
 
 .mbl__menu {
@@ -162,6 +181,36 @@
 
 .mbl__strong {
   position: relative;
+}
+
+.text__area {
+  text-align: center;
+  color: #015e8e;
+  margin-top: 25%;
+  margin-bottom: 40px;
+}
+
+.text__area__ttl h2 {
+  font-size: 8vw;
+  font-weight: bold;
+  margin-bottom: 3vw;
+}
+
+.text__area__ttl p {
+  font-size: 4vw;
+}
+
+.text__area__comment {
+  width: 90%;
+  margin: 4vw auto 0;
+  text-align: left;
+  font-size: 3.8vw;
+}
+
+.text__area__comment p {
+  font-family: "Hiragino Mincho ProN","ヒラギノ明朝 Pro","游明朝 Light";
+  letter-spacing: 0.2rem;
+  line-height: 1.5rem;
 }
 
 .toglle_block {
