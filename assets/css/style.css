@@ -183,6 +183,48 @@
   position: relative;
 }
 
+.picture__image {
+  border-bottom: 1px solid #fff;
+  position: relative;
+}
+
+.picture__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+
+.picture__text__main {
+  font-size: 4.5vw;
+  font-weight: bold;
+  margin-bottom: 4vw;
+}
+
+.picture__text__sub {
+  font-size: 3.5vw;
+}
+
+.picture__text__sub span {
+  display: inline-block;
+  background-color: #0078ff;
+  padding: 5px 10px;
+  margin-left: 2vw;
+}
+
+.panel {
+  height: 33vw;
+  border: 1px solid #2e76a7;
+}
+
+.panel__ttl {
+  font-size: 4.5vw;
+  color: #0078ff;
+}
+
 .text__area {
   text-align: center;
   color: #015e8e;

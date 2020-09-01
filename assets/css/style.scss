@@ -174,6 +174,44 @@ $c_bg: #096999;
   position: relative;
 }
 
+.picture {
+  &__image {
+    border-bottom: 1px solid #fff;
+    position: relative;
+  }
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    &__main {
+      font-size: 4.5vw;
+      font-weight: bold;
+      margin-bottom: 4vw;
+    }
+    &__sub {
+      font-size: 3.5vw;
+      & span {
+        display: inline-block;
+        background-color: #0078ff;
+        padding: 5px 10px;
+        margin-left: 2vw;
+      }
+    }
+  }
+}
+
+.panel {
+  height: 33vw;
+  border: 1px solid rgb(46, 118, 167);
+  &__ttl {
+    font-size: 4.5vw;
+    color: #0078ff;
+  }
+}
+
 .text__area {
   text-align: center;
   color: #015e8e;
@@ -291,5 +329,26 @@ $c_bg: #096999;
     background: #007aff
   }
 }
+
+
+// .test_p {
+//   position: relative;
+// }
+// .test {
+//   background-size: cover;
+//   background-image: 
+//   url(../../assets/images/home-service__btn01_xs.jpg),
+//   url(../../assets/images/home-service__btn02_xs.jpg),
+//   url(../../assets/images/home-service__btn03_xs.jpg),
+//   url(../../assets/images/home-service__btn05_xs.jpg),
+//   url(../../assets/images/home-service__btn06_xs.jpg),
+//   url(../../assets/images/home-service__btn07_xs.jpg),  
+//   ;
+//   background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: cover,0 0,0 0,0 0;
+//     z-index: -1;
+//     position: absolute;
+// }
 
 // swiper ここまで=================
