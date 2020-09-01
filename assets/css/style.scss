@@ -210,6 +210,17 @@ $c_bg: #096999;
     font-size: 4.5vw;
     color: #0078ff;
   }
+  &__picture {
+    & img {
+      object-fit: cover;
+      height: 42vw;
+
+    }
+  }
+}
+
+.parts {
+  margin: 50px 0;
 }
 
 .text__area {

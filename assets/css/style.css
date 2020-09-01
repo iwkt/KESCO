@@ -225,6 +225,16 @@
   color: #0078ff;
 }
 
+.panel__picture img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 42vw;
+}
+
+.parts {
+  margin: 50px 0;
+}
+
 .text__area {
   text-align: center;
   color: #015e8e;
