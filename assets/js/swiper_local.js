@@ -1,4 +1,4 @@
-let swiper = new Swiper('.mbl_swiper_top', {
+let swiper1 = new Swiper('.mbl_swiper_top', {
   // 以下にオプションを設定
   loop: true, //最後に達したら先頭に戻る
   autoHeight: false,
@@ -21,5 +21,19 @@ let swiper = new Swiper('.mbl_swiper_top', {
   navigation: {
     nextEl: '.swiper-button-next', //「次へボタン」要素の指定
     prevEl: '.swiper-button-prev', //「前へボタン」要素の指定
+  }
+});
+
+let swiper2 = new Swiper('.recruit_slider', {
+  // 以下にオプションを設定
+  loop: false, //最後に達したら先頭に戻る
+  autoHeight: false,
+  slidesPerView: 1.3,
+  spaceBetween: 20,
+  centeredSlides: true,
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    hide: true,
+    draggable: true
   }
 });

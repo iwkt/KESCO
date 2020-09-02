@@ -49,6 +49,7 @@ $c_bg: #096999;
 
 .cth__copy{
   color: #fff;
+  position: relative;
   &__bk {
     position: absolute;
     top: 7%;
@@ -90,10 +91,11 @@ $c_bg: #096999;
     margin-bottom: 30px;
   }
   &__text {
-    font-size: .85rem;
+    font-size: 3.6vw;
     letter-spacing: 0.1rem;
-    line-height: 1.7rem;
+    line-height: 6vw;
     padding-left: 15%;
+    margin-bottom: 10vw;
   }
   &__wrapper {
     margin-bottom: 10%;
@@ -168,10 +170,6 @@ $c_bg: #096999;
 
 .mbl__sldr1 {
   margin-bottom: 50px;
-}
-
-.mbl__strong {
-  position: relative;
 }
 
 .picture {
@@ -250,6 +248,34 @@ $c_bg: #096999;
     }
   }
 }
+
+.recruit {
+  &__linkname {
+    color: #fff;
+    margin-top: 3vw;
+    &::before {
+      content: '';
+      vertical-align: middle;
+      height: 1.5px;
+      width: 20px;
+      display: inline-block;
+      background-color: #fff;
+      margin-right: 3vw;
+    }
+  }
+  &__slider {
+    margin: 15vw 0;
+  }
+  &__slider__div{
+    margin: auto;
+    text-align: center;
+
+  }
+  // &__slider__img {
+  //   width: 100%;
+  // }
+}
+
 .toglle_block {
   position: absolute;
   display: block;
@@ -339,6 +365,12 @@ $c_bg: #096999;
   &-active {
     background: #007aff
   }
+}
+
+.swiper-slide > img {
+   object-fit: cover; /* IE: not support */
+   width: 100%;
+   height: 100%;
 }
 
 
