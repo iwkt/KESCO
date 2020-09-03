@@ -35,15 +35,61 @@ $c_bg: #096999;
   }
 }
 
-.white_btn  {
-  text-align: center;
-  & a {
-    border: 1px solid #fff;
-    display: inline-block;
-    padding: 4% 10%;
-    letter-spacing: 3px;
-    font-size: 3.5vw;
+.boder-gradation {
+  position: relative;
+  border-left: solid 2px #69ddff !important;
+  border-right: solid 2px #0078ff !important;
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right,#69ddff,#0078ff);
+  } 
+  &:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right,#69ddff,#0078ff);
+  }
+}
 
+.contactus {
+  text-align: center;
+  color: #0078ff;
+  &__link {
+    display: block;
+    padding: 11vw 0;
+    border: 2px solid #69ddff;
+    & span {
+      display: inline-block;
+      font-size: 7vw;
+    }
+  }
+  &__mail .contactus__link {
+    border-top: none;
+  }
+}
+
+.cpny__info {
+  position: relative;
+  overflow: hidden;
+  padding: 15vw 0;
+  margin: 15vw 0 25vw;
+  text-align: center;
+  &__bgi {
+    position: absolute;
+    top: -10%;
+    z-index: -1;
+  }
+  &__texts {
+    color: #fff;
+    & h2 {
+      font-family: "ヒラギノ角ゴ Pro W6";
+    }
   }
 }
 
@@ -98,6 +144,21 @@ $c_bg: #096999;
     padding-left: 15%;
     margin-bottom: 10vw;
   }
+}
+
+.fa-phone-alt,
+.fa-envelope {
+  font-size: 6vw;
+  margin-right: 2vw;
+  vertical-align: bottom;
+}
+
+.fa-envelope {
+  padding-bottom: 2px;
+}
+
+.g_btn {
+  padding: 15px 20px !important;
 }
 
 .mbl__menu {
@@ -219,20 +280,24 @@ $c_bg: #096999;
   margin: 50px 0;
 }
 
+.ttl {
+  margin-bottom: 3vw;
+  letter-spacing: .4vw;
+}
+
 .text__area {
   text-align: center;
   color: #015e8e;
   margin-top: 25%;
   margin-bottom: 40px;
   &__ttl {
-    & h2 {
-      font-size: 8vw;
-      font-weight: bold;
-      margin-bottom: 3vw;
-    }
-    & p {
-      font-size: 4vw;
-    }
+    font-size: 7vw;
+    font-weight: bold;
+    margin-bottom: 3vw;
+  }
+  &__ttl__sub {
+    font-size: 4vw;
+    margin-bottom: 4vw;
   }
   &__comment {
     width: 90%;
@@ -372,22 +437,84 @@ $c_bg: #096999;
    height: 100%;
 }
 
+
+.white_btn  {
+  text-align: center;
+  & a {
+    border: 1px solid #fff;
+    display: inline-block;
+    padding: 4% 10%;
+    letter-spacing: 3px;
+    font-size: 3.5vw;
+
+  }
+}
+
 .whtnew {
+  &__btn.white_btn {
+    color: #0078ff;
+    display: inline-block;
+  }
   &__info {
     color: #333;
+    margin-bottom: 30px;
+    & a {
+      border-bottom: 1px solid rgb(180, 180, 180);
+      display: block;
+      padding: 20px 0 10px;
+      text-align: center;
+    }
   }
   &__ttl {
     margin-bottom: 8vw;
   }
   &__date {
-    font-size: 3.5vw;
+    font-size: 0.95rem;
     margin-bottom: 2vw;
   }
   &__text {
     font-family:  "游明朝 Light","游明朝体",YuMincho,"游明朝",Yu Mincho,Georgia,"ヒラギノ明朝 ProN W3",Hiragino Mincho ProN W3,HiraMinProN-W3,"ヒラギノ明朝 ProN",Hiragino Mincho ProN,"ヒラギノ明朝 Pro",Hiragino Mincho Pro,"HGS明朝E","ＭＳ Ｐ明朝",MS PMincho,serif;;
-    font-size: 3.9vw;
-    text-align: left;
+    font-size: 0.95rem;
     line-height: 1.5;
+  }
+}
+
+@media (max-width: 768px) {
+  .whtnew {
+    &__text {
+      text-align: left;
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  .contactus {
+    &__link {
+      padding: 70px 80px;
+      & span {
+        font-size: 38px;
+      }
+      & i {
+        font-size: 38px;
+      }
+      & P {
+        font-size: 20px;
+      }
+    }
+    &__mail .contactus__link {
+      border-left: none;
+      border-top: 2px solid #69ddff;
+    }
+  }
+  .fa-envelope {
+    padding-bottom: 0;
+  }
+  .text__area__ttl  {
+    font-size: 38px;
+    margin-bottom: 15px;
+    &__sub {
+      font-size: 18px;
+    }
   }
 }
 // .test_p {
