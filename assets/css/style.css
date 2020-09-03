@@ -183,6 +183,7 @@
 .footer__logo__img {
   display: block;
   padding: 8vw 0;
+  max-height: 100%;
 }
 
 .g_btn {
