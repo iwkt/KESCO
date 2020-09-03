@@ -181,6 +181,7 @@
 }
 
 .footer__logo__img {
+  display: inline-block;
   padding: 8vw 0;
 }
 
