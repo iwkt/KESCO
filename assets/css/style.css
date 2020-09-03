@@ -47,6 +47,7 @@
 .cth__copy__container {
   padding-left: 2rem;
   padding-right: 1.5rem;
+  margin-bottom: 13vw;
 }
 
 .cth__copy__img {
@@ -65,34 +66,30 @@
 }
 
 .cth__copy__ttl_s {
-  font-size: 14px;
-  margin-bottom: 30px;
+  font-size: 4vw;
+  margin-bottom: 5vw;
 }
 
 .cth__copy__ttl {
-  font-size: 28px;
+  font-size: 8vw;
   font-family: noto;
-  margin-bottom: 10px;
+  margin-bottom: 5vw;
 }
 
 .cth__copy__ttl__sub {
   letter-spacing: .2rem;
-  line-height: 130%;
+  line-height: 1.3;
   font-size: 7vw;
   font-family: YuMincho;
-  margin-bottom: 30px;
+  margin-bottom: 5vw;
 }
 
 .cth__copy__text {
   font-size: 3.6vw;
   letter-spacing: 0.1rem;
-  line-height: 6vw;
+  line-height: 1.5;
   padding-left: 15%;
   margin-bottom: 10vw;
-}
-
-.cth__copy__wrapper {
-  margin-bottom: 10%;
 }
 
 .mbl__menu {
@@ -260,11 +257,12 @@
 .text__area__comment p {
   font-family: "Hiragino Mincho ProN","ヒラギノ明朝 Pro","游明朝 Light";
   letter-spacing: 0.2rem;
-  line-height: 1.5rem;
+  line-height: 1.5;
 }
 
 .recruit__linkname {
   color: #fff;
+  font-size: 3vw;
   margin-top: 3vw;
 }
 
@@ -272,14 +270,14 @@
   content: '';
   vertical-align: middle;
   height: 1.5px;
-  width: 20px;
+  width: 3vw;
   display: inline-block;
   background-color: #fff;
   margin-right: 3vw;
 }
 
 .recruit__slider {
-  margin: 15vw 0;
+  margin-bottom: 13vw;
 }
 
 .recruit__slider__div {
@@ -400,5 +398,25 @@
   /* IE: not support */
   width: 100%;
   height: 100%;
+}
+
+.whtnew__info {
+  color: #333;
+}
+
+.whtnew__ttl {
+  margin-bottom: 8vw;
+}
+
+.whtnew__date {
+  font-size: 3.5vw;
+  margin-bottom: 2vw;
+}
+
+.whtnew__text {
+  font-family: "游明朝 Light","游明朝体",YuMincho,"游明朝",Yu Mincho,Georgia,"ヒラギノ明朝 ProN W3",Hiragino Mincho ProN W3,HiraMinProN-W3,"ヒラギノ明朝 ProN",Hiragino Mincho ProN,"ヒラギノ明朝 Pro",Hiragino Mincho Pro,"HGS明朝E","ＭＳ Ｐ明朝",MS PMincho,serif;
+  font-size: 3.9vw;
+  text-align: left;
+  line-height: 1.5;
 }
 /*# sourceMappingURL=style.css.map */

@@ -28,7 +28,7 @@ let swiper2 = new Swiper('.recruit_slider', {
   // 以下にオプションを設定
   loop: false, //最後に達したら先頭に戻る
   autoHeight: false,
-  slidesPerView: 1.3,
+  slidesPerView: 1.5,
   spaceBetween: 20,
   centeredSlides: true,
   scrollbar: {
