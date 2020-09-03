@@ -157,6 +157,30 @@ $c_bg: #096999;
   padding-bottom: 2px;
 }
 
+.footer {
+  &__bnrs {
+    background-color: #126d9c;
+    padding: 5vw 0;
+  }
+  &__bnr {
+    padding: 1.5vw;
+  }
+  &__copy {
+    background-color: #091e4e;
+    color: #fff;
+    font-size: 10px;
+    padding: 20px 30px;
+    line-height: 1.5;
+  }
+  &__logo {
+    background-color: #e1eaed;
+    &__img {
+      display: block;
+      padding: 8vw 0;
+    }
+  }
+}
+
 .g_btn {
   padding: 15px 20px !important;
 }

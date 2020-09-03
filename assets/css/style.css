@@ -159,6 +159,32 @@
   padding-bottom: 2px;
 }
 
+.footer__bnrs {
+  background-color: #126d9c;
+  padding: 5vw 0;
+}
+
+.footer__bnr {
+  padding: 1.5vw;
+}
+
+.footer__copy {
+  background-color: #091e4e;
+  color: #fff;
+  font-size: 10px;
+  padding: 20px 30px;
+  line-height: 1.5;
+}
+
+.footer__logo {
+  background-color: #e1eaed;
+}
+
+.footer__logo__img {
+  display: block;
+  padding: 8vw 0;
+}
+
 .g_btn {
   padding: 15px 20px !important;
 }
