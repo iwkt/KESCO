@@ -181,8 +181,9 @@
 }
 
 .footer__logo__img {
-  display: inline-block;
   padding: 8vw 0;
+  height: 100%;
+  width: 100%;
 }
 
 .g_btn {
