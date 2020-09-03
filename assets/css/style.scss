@@ -21,6 +21,10 @@ $c_bg: #096999;
   visibility: visible;
 }
 
+@mixin slide_in ($time:0.4s) {
+  transition: all $time cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
 
 .acd__parent__ttl {
   padding: 20px;
@@ -148,6 +152,16 @@ $c_bg: #096999;
     padding-left: 15%;
     margin-bottom: 10vw;
   }
+  &__wrapper {
+    opacity: 0;
+    transform: translateY(100px);
+    @include slide_in();
+    transition-delay: 0.2s;
+    &.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 }
 
 .fa-phone-alt,
@@ -188,7 +202,10 @@ $c_bg: #096999;
 
 .g_btn {
   padding: 15px 20px !important;
+}
 
+.glorbal_container {
+  overflow-x: hidden;
 }
 
 .mbl__menu {
@@ -308,6 +325,22 @@ $c_bg: #096999;
 
 .parts {
   margin: 50px 0;
+}
+
+.slide_in_l {
+  transform: translateX(-100%);
+  @include slide_in();
+  &.active {
+    transform: translateX(0);
+  }
+}
+
+.slide_in_r {
+  transform: translateX(200%);
+  @include slide_in();
+  &.active {
+    transform: translateX(0);
+  }
 }
 
 .ttl {
