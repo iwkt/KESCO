@@ -32,6 +32,8 @@
   height: 2px;
   background: -webkit-gradient(linear, left top, right top, from(#69ddff), to(#0078ff));
   background: linear-gradient(to right, #69ddff, #0078ff);
+  top: -1px;
+  left: 0;
 }
 
 .boder-gradation:before {
@@ -42,6 +44,8 @@
   height: 2px;
   background: -webkit-gradient(linear, left top, right top, from(#69ddff), to(#0078ff));
   background: linear-gradient(to right, #69ddff, #0078ff);
+  bottom: -1px;
+  left: 0;
 }
 
 .contactus {
@@ -187,8 +191,7 @@
 }
 
 .g_btn {
-  padding: 15px 30px !important;
-  width: 100%;
+  padding: 15px 20px !important;
 }
 
 .mbl__menu {
@@ -519,7 +522,6 @@
 
 .whtnew__btn.white_btn {
   color: #0078ff;
-  display: inline-block;
 }
 
 .whtnew__info {
