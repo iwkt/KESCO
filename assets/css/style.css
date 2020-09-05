@@ -152,22 +152,6 @@
   margin-bottom: 10vw;
 }
 
-.cth__copy__wrapper {
-  opacity: 0;
-  -webkit-transform: translateY(100px);
-          transform: translateY(100px);
-  -webkit-transition: all 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
-  transition: all 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
-  -webkit-transition-delay: 0.2s;
-          transition-delay: 0.2s;
-}
-
-.cth__copy__wrapper.active {
-  opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-
 .fa-phone-alt,
 .fa-envelope {
   font-size: 6vw;
@@ -352,28 +336,64 @@
   margin: 50px 0;
 }
 
-.slide_in_l {
+.slide_in.su {
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  -webkit-transition: all 0.6s cubic-bezier(0.65, 0.05, 0.36, 1);
+  transition: all 0.6s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.slide_in.su.active {
+  -webkit-transform: none;
+          transform: none;
+}
+
+.slide_in.sl {
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
-  -webkit-transition: all 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
-  transition: all 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
+  -webkit-transition: all 0.6s cubic-bezier(0.65, 0.05, 0.36, 1);
+  transition: all 0.6s cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 
-.slide_in_l.active {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+.slide_in.sl.active {
+  -webkit-transform: none;
+          transform: none;
 }
 
-.slide_in_r {
+.slide_in.sr {
   -webkit-transform: translateX(200%);
           transform: translateX(200%);
-  -webkit-transition: all 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
-  transition: all 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
+  -webkit-transition: all 0.6s cubic-bezier(0.65, 0.05, 0.36, 1);
+  transition: all 0.6s cubic-bezier(0.65, 0.05, 0.36, 1);
 }
 
-.slide_in_r.active {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+.slide_in.sr.active {
+  -webkit-transform: none;
+          transform: none;
+}
+
+.slide_in.sd {
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+  -webkit-transition: all 0.6s cubic-bezier(0.65, 0.05, 0.36, 1);
+  transition: all 0.6s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.slide_in.sd.active {
+  -webkit-transform: none;
+          transform: none;
+}
+
+.slide_in.su {
+  opacity: 0;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.slide_in.su.active {
+  opacity: 1;
+  -webkit-transform: none;
+          transform: none;
 }
 
 .ttl {

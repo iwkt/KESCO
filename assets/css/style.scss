@@ -21,10 +21,10 @@ $c_bg: #096999;
   visibility: visible;
 }
 
-@mixin slide_in ($time:0.4s) {
+@mixin slide_in ($time:0.6s) {
+  // opacity: 0;
   transition: all $time cubic-bezier(0.65, 0.05, 0.36, 1);
 }
-
 
 .acd__parent__ttl {
   padding: 20px;
@@ -101,7 +101,7 @@ $c_bg: #096999;
   }
 }
 
-.cth__copy{
+.cth__copy {
   color: #fff;
   position: relative;
   &__bk {
@@ -152,16 +152,16 @@ $c_bg: #096999;
     padding-left: 15%;
     margin-bottom: 10vw;
   }
-  &__wrapper {
-    opacity: 0;
-    transform: translateY(100px);
-    @include slide_in();
-    transition-delay: 0.2s;
-    &.active {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
+  // &__wrapper {
+  //   opacity: 0;
+  //   transform: translateY(100px);
+  //   @include slide_in();
+  //   transition-delay: 0.2s;
+  //   &.active {
+  //     opacity: 1;
+  //     transform: translateY(0);
+  //   }
+  // }
 }
 
 .fa-phone-alt,
@@ -327,21 +327,40 @@ $c_bg: #096999;
   margin: 50px 0;
 }
 
-.slide_in_l {
-  transform: translateX(-100%);
-  @include slide_in();
+//slide_in ===========================
+$pattern: (
+  "su": translateY(100px),
+  "sl": translateX(-100%),
+  "sr": translateX(200%),
+  "sd": translateY(-100px)
+);
+
+@each $key, $value in $pattern {
+  .slide_in.#{$key} {
+    transform: $value;
+    @include slide_in();
+    &.active {
+      transform: none;
+    }
+  }  
+}
+
+.slide_in.su {
+  opacity: 0;
+  transition-delay: 0.2s;
   &.active {
-    transform: translateX(0);
+    opacity: 1;
+    transform: none;
   }
 }
 
-.slide_in_r {
-  transform: translateX(200%);
-  @include slide_in();
-  &.active {
-    transform: translateX(0);
-  }
-}
+// .slide_in {
+//   transform: translateX(200%);
+//   @include slide_in();
+//   &.active {
+//     transform: translateX(0);
+//   }
+// }
 
 .ttl {
   margin-bottom: 3vw;
