@@ -1,9 +1,10 @@
-// window.addEventListener('scroll',function () {
-//   let scroll = document.documentElement.scrollTop;
-//   document.querySelector('#scroll').innerHTML = scroll;
-
-  // let slideElm = document.querySelectorAll('.slide_in');
 /*
+window.addEventListener('scroll',function () {
+  let scroll = document.documentElement.scrollTop;
+  document.querySelector('#scroll').innerHTML = scroll;
+
+  let slideElm = document.querySelectorAll('.slide_in');
+
   if (scroll > 200) {
     // ↓　つまずいた部分 for in でもいける。lengthは不要！
     // for (i in slideElm) {
@@ -46,7 +47,7 @@ function showElementAnimation() {
   let element = document.querySelectorAll('.slide_in');
   if (!element) return; // 要素がなかったら処理をキャンセル
 
-  let showTiming = window.innerHeight > 768 ? 200 : 100; // 要素が出てくるタイミングはここで調整
+  let showTiming = window.innerHeight > 768 ? 200 : 80; // 要素が出てくるタイミングはここで調整
   let scrollY = window.pageYOffset; //スクロール量を取得
   let windowH = window.innerHeight; //ブラウザウィンドウのビューポート(viewport)の高さを取得
   for (let i = 0; i < element.length; i++) {

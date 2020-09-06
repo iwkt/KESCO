@@ -347,7 +347,7 @@ $pattern: (
 
 .slide_in.su {
   opacity: 0;
-  // transition-delay: 0.2s;
+  // transition-delay: -0.2s;
   &.active {
     opacity: 1;
     transform: none;
