@@ -386,8 +386,6 @@
 
 .slide_in.su {
   opacity: 0;
-  -webkit-transition-delay: 0.2s;
-          transition-delay: 0.2s;
 }
 
 .slide_in.su.active {
@@ -648,5 +646,17 @@
   .text__area__ttl__sub {
     font-size: 18px;
   }
+}
+
+.child {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: all 0.6s cubic-bezier(0.65, 0.05, 0.36, 1);
+  transition: all 0.6s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.child.inview {
+  -webkit-transform: none;
+          transform: none;
 }
 /*# sourceMappingURL=style.css.map */
