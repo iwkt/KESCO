@@ -13,8 +13,8 @@ class ScllOb {
       changes.forEach(change => {
         if (change.isIntersecting) {
           change.target.classList.add('active');
-        } else {
-          change.target.classList.remove('active');
+        // } else {
+        //   change.target.classList.remove('active');
         }
       })
     }

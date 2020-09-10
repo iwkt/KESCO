@@ -137,6 +137,7 @@
 }
 
 .cth__copy__ttl__sub {
+  font-family: "游明朝 Light","游明朝体",YuMincho,"游明朝",Yu Mincho,Georgia,"ヒラギノ明朝 ProN W3",Hiragino Mincho ProN W3,HiraMinProN-W3,"ヒラギノ明朝 ProN",Hiragino Mincho ProN,"ヒラギノ明朝 Pro",Hiragino Mincho Pro,"HGS明朝E","ＭＳ Ｐ明朝",MS PMincho,serif !important;
   letter-spacing: .2rem;
   line-height: 1.3;
   font-size: 7vw;
@@ -402,8 +403,7 @@
 .text__area {
   text-align: center;
   color: #015e8e;
-  margin-top: 25%;
-  margin-bottom: 40px;
+  margin: 25% 15px 40px;
 }
 
 .text__area__ttl {
@@ -425,7 +425,7 @@
 }
 
 .text__area__comment p {
-  font-family: "Hiragino Mincho ProN","ヒラギノ明朝 Pro","游明朝 Light";
+  font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 Pro", "游明朝 Light" !important;
   letter-spacing: 0.2rem;
   line-height: 1.5;
 }
@@ -608,7 +608,7 @@
 }
 
 .whtnew__text {
-  font-family: "游明朝 Light","游明朝体",YuMincho,"游明朝",Yu Mincho,Georgia,"ヒラギノ明朝 ProN W3",Hiragino Mincho ProN W3,HiraMinProN-W3,"ヒラギノ明朝 ProN",Hiragino Mincho ProN,"ヒラギノ明朝 Pro",Hiragino Mincho Pro,"HGS明朝E","ＭＳ Ｐ明朝",MS PMincho,serif;
+  font-family: "游明朝 Light", "游明朝体", YuMincho, "游明朝", Yu Mincho, Georgia, "ヒラギノ明朝 ProN W3", Hiragino Mincho ProN W3, HiraMinProN-W3, "ヒラギノ明朝 ProN", Hiragino Mincho ProN, "ヒラギノ明朝 Pro", Hiragino Mincho Pro, "HGS明朝E", "ＭＳ Ｐ明朝", MS PMincho, serif !important;
   font-size: 0.95rem;
   line-height: 1.5;
 }
@@ -620,6 +620,12 @@
 }
 
 @media (min-width: 769px) {
+  .cth__copy__container {
+    margin-bottom: 50px;
+  }
+  .cth__copy__slide {
+    width: 73vw;
+  }
   .contactus__link {
     padding: 70px 80px;
   }
@@ -636,27 +642,151 @@
     border-left: none;
     border-top: 2px solid #69ddff;
   }
+  .cth__copy img {
+    padding: 100px 0;
+    margin-left: 5vw;
+    max-width: 100%;
+  }
+  .cth__copy__bk {
+    top: 0;
+  }
+  .cth__copy__text {
+    width: 100%;
+    font-size: 15px;
+    letter-spacing: .5rem;
+    line-height: 1.5;
+    margin-bottom: 3rem;
+  }
+  .cth__copy__ttl {
+    font-size: 34px;
+    margin-bottom: 17px;
+    margin-right: 50px;
+    letter-spacing: .2rem;
+  }
+  .cth__copy__ttl_s {
+    font-size: 15px;
+    margin-right: 50px;
+    margin-bottom: 3rem;
+  }
+  .cth__copy__ttl__sub {
+    font-size: 50px;
+    letter-spacing: .6rem;
+    margin-bottom: 3rem;
+  }
+  .cth__copy__wrapper {
+    position: absolute;
+    top: 200px;
+    right: 5vw;
+    width: 40%;
+    margin: 0 auto;
+  }
   .fa-envelope {
     padding-bottom: 0;
+  }
+  .slide_in.sr.active {
+    -webkit-transform: translateX(20vw);
+            transform: translateX(20vw);
+  }
+  .text__area {
+    margin-top: 9vw;
+  }
+  .text__area__midasi {
+    padding-right: 50px;
+  }
+  .text__area__comment {
+    font-size: 15px;
+    margin: 0 50px 0 30px;
   }
   .text__area__ttl {
     font-size: 38px;
     margin-bottom: 15px;
+    text-align: right;
   }
   .text__area__ttl__sub {
     font-size: 18px;
+    text-align: right;
+    padding-right: 120px;
+  }
+  .mbl__hdr {
+    display: none;
+  }
+  .mbl__sldr1 {
+    margin-bottom: 0;
+  }
+  .mbl__pict {
+    display: none;
+  }
+  .white_btn {
+    text-align: right;
+  }
+  .white_btn a {
+    font-size: 14px;
+  }
+  .pc__picture__text {
+    border: none !important;
+  }
+  .picture {
+    position: relative;
+    color: #fff;
+    text-align: center;
+  }
+  .picture__text__main {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .picture__text__sub {
+    font-size: 20px;
+  }
+  .pict__parent {
+    position: relative;
+  }
+  .pict__chi {
+    border: none !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 100%;
+  }
+  .pictures {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .pictures div {
+    border: 1px solid #fff;
   }
 }
 
-.child {
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
-  -webkit-transition: all 0.7s cubic-bezier(0.65, 0.05, 0.36, 1);
-  transition: all 0.7s cubic-bezier(0.65, 0.05, 0.36, 1);
+.pc__hdr__mail {
+  background-color: #0078ff;
 }
 
-.child.inview {
-  -webkit-transform: none;
-          transform: none;
+.pc__hdr__mail i {
+  font-size: 50px;
+  padding: 20px;
+  margin: 0;
+}
+
+.pc__hdr__logo img {
+  margin-left: 30px;
+  width: 150px !important;
+}
+
+.fa-envelope {
+  display: block;
+  color: #fff;
+}
+
+.abc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=style.css.map */

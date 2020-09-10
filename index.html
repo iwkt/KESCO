@@ -6,13 +6,26 @@
     <meta name="viewport"content="width=device-width, initial-scale=1.0">
     <title>KESCO</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
-    <link rel="stylesheet" href="./assets/swiper/swiper.css">
     <link rel="stylesheet" href="./assets/css/reset_style.css">
     <link href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/swiper/swiper.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
   </head>
   <body>
     <div class="glorbal_container">
+      <nav class="pc__hdr grid_sm-hidden">
+        <div class="pc__hdr__logo col-5-middle"><img src="./assets/images/logo.png" alt=""></div>
+        <ul class="col-7-middle abc">
+          <li class="col-2-middle"><a href="#">KESCOの強み</a></li>
+          <li class="col-2-middle"><a href="#">事業内容</a></li>
+          <li class="col-2-middle"><a href="#">部品の紹介</a></li>
+          <li class="col-2-middle"><a href="#">会社情報</a></li>
+          <li class="col-2-middle"><a href="#">採用情報</a></li>
+          <li class="col-2-middle"><a href="#">新着情報</a></li>
+          <li class="col-2-middle"><a href="#"></a></li>
+          <li class="col-2-middle pc__hdr__mail"><a href="#"><i class="fas fa-envelope"></i></a></li>
+        </ul>
+      </nav>
       <div class="mbl__container">
         <nav class="mbl__hdr grid-spaceBetween">
           <div class="mbl__hdr__logo col-4-middle">
@@ -76,16 +89,28 @@
             <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide slide1">
-                <img class="kv_txt" src="./assets/images/main-img01_xs.jpg">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="./assets/images/main-img01_md.jpg">
+                  <img class="kv_txt" src="./assets/images/main-img01_xs.jpg">
+                </picture>
               </div>
               <div class="swiper-slide slide2">
-                <img class="kv_txt" src="./assets/images/main-img02_xs.jpg">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="./assets/images/main-img02_md.jpg">
+                  <img class="kv_txt" src="./assets/images/main-img02_xs.jpg">
+                </picture>
               </div>
               <div class="swiper-slide slide3">
-                <img class="kv_txt" src="./assets/images/main-img03_xs.jpg">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="./assets/images/main-img03_md.jpg">
+                  <img class="kv_txt" src="./assets/images/main-img03_xs.jpg">
+                </picture>
               </div>
               <div class="swiper-slide slide4">
-                <img class="kv_txt" src="./assets/images/main-img05_xs.jpg">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="./assets/images/main-img05_md.jpg">
+                  <img class="kv_txt" src="./assets/images/main-img05_xs.jpg">
+                </picture>
               </div>
             </div>
           </div>
@@ -96,7 +121,6 @@
         </section>
         <section class="mbl__strong cth__copy">
           <div id="dley1" class="cth__copy__bk slide_in sr"></div>
-          <!-- <div class="cth__copy__bk slide_in sr"></div> -->
           <div class="cth__copy__slide slide_in sl">
             <img src="./assets/images/top_strong-img_md.jpg" alt="" class="mbl__strong__img cth__copy__img" >
           </div>
@@ -113,12 +137,12 @@
             </div>
           </div>
         </section>
-        <section id="SERVICES" class="text__area slide_in su">
-          <div>
+        <section id="SERVICES" class="text__area slide_in su grid-center">
+          <div class="text__area__midasi col-3_sm-12">
             <h2 class="text__area__ttl">SERVICES</h2>
             <p class="text__area__ttl__sub">事業内容</p>
           </div>
-          <div class="text__area__comment">
+          <div class="text__area__comment col-6_sm-12">
             <p>KESCOは、国内最大手のバルブメーカーであるKITZの販売ネットワークや各種データ類をバックボーンに、メンテナンスに関する多様なニーズにお応えしています。また、他メーカーのバルブやアクチュエータも取扱い、全国各地にスムーズできめ細かいサービスを提供しています。
             </p>
           </div>
@@ -126,14 +150,55 @@
         <section class="picture">
           <div class="picture__image">
             <a href="#">
-              <img src="./assets/images/home-service__btn01_xs.jpg" alt="">
-              <div class="picture__text">
+              <picture>
+                <source media="(min-width:769px )" srcset="./assets/images/home-service__btn01_1x.jpg">
+                <img src="./assets/images/home-service__btn01_xs.jpg" alt="">
+              </picture>
+              <div class=" mbl__pict picture__text">
                 <p class="picture__text__main" >バルブのメンテナンス</p>
                 <p class="picture__text__sub">驚きの<span>対応力</span> </p>
               </div>
             </a>
+            <div class="pictures grid-noGutter-equalHeigh_sm-hidden">
+              <div class="col-6 grid-center">
+                <div class="pc__picture__text col-12-middle">
+                  <p class="picture__text__main">バルブのメンテナンス</p>
+                  <p class="picture__text__sub">驚きの<span>対応力</span> </p>
+                </div>
+                <div class="pict__parent col-6">
+                  <div class="pict__chi">
+                    <p class="picture__text__main">技術者派遣</p>
+                    <p class="picture__text__sub">驚きの<span>指導力</span> </p>
+                  </div>
+                </div>
+                <div class="pict__parent col-6">
+                  <div class="pict__chi">
+                    <p class="picture__text__main">部品の供給</p>
+                    <p class="picture__text__sub">驚きの<span>短納期</span> </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 grid">
+                <div class="pc__picture__text col-12-middle">
+                  <p class="picture__text__main">エンジニアリング</p>
+                  <p class="picture__text__sub">驚きの<span>技術力と提案力</span> </p>
+                </div>
+                <div class="pict__parent col-6">
+                  <div class="pict__chi">
+                    <p class="picture__text__main">製造補助</p>
+                    <p class="picture__text__sub">驚きの<span>適応力</span> </p>
+                  </div>
+                </div>
+                <div class="pict__parent col-6">
+                  <div class="pict__chi">
+                    <p class="picture__text__main">建造物のメンテナンス</p>
+                    <p class="picture__text__sub">驚きの<span>コストと対応力</span> </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="picture__image">
+          <div class="picture__image mbl__pict">
             <a href="#">
               <img src="./assets/images/home-service__btn02_xs.jpg" alt="">
               <div class="picture__text">
@@ -142,7 +207,7 @@
               </div>
             </a>
           </div>
-          <div class="picture__image">
+          <div class="picture__image mbl__pict">
             <a href="#">
               <img src="./assets/images/home-service__btn03_xs.jpg" alt="">
               <div class="picture__text">
@@ -151,7 +216,7 @@
               </div>
             </a>
           </div>
-          <div class="picture__image">
+          <div class="picture__image mbl__pict">
             <a href="#">
               <img src="./assets/images/home-service__btn04_xs.jpg" alt="">
               <div class="picture__text">
@@ -160,7 +225,7 @@
               </div>
             </a>
           </div>
-          <div class="picture__image">
+          <div class="picture__image mbl__pict">
             <a href="#">
               <img src="./assets/images/home-service__btn05_xs.jpg" alt="">
               <div class="picture__text">
@@ -169,7 +234,7 @@
               </div>
             </a>
           </div>
-          <div class="picture__image">
+          <div class="picture__image mbl__pict">
             <a href="#">
               <img src="./assets/images/home-service__btn06_xs.jpg" alt="">
               <div class="picture__text">
