@@ -1,66 +1,32 @@
-/*
-window.addEventListener('scroll',function () {
-  let scroll = document.documentElement.scrollTop;
-  document.querySelector('#scroll').innerHTML = scroll;
-
-  let slideElm = document.querySelectorAll('.slide_in');
-
-  if (scroll > 200) {
-    // ↓　つまずいた部分 for in でもいける。lengthは不要！
-    // for (i in slideElm) {
-    //   slideElm[i].classList.add('active');
-    // }
-
-    // ↓のforはOK 
-    // for (let i = 0;  i < slideElm.length; i++) {
-    //   slideElm[i].classList.add('active');
-    // } 
-
-    // 結果的にforEachで簡素化
-    slideElm.forEach(value => value.classList.add('active'));
-  } else {
-    // for (let i = 0; i < slideElm.length; i++) {
-    //   slideElm[i].classList.remove('active');  
-    // }
-    slideElm.forEach(value => value.classList.remove('active'));
-  } 
-})
-*/
-
-// const scrollAnimationElm = document.querySelectorAll('.slide_in');
-// const scrollAnimationFunc = function () {
-//   for (i in scrollAnimationElm) {
-//     const triggerMargin = 180;
-//     if (window.innerHeight > scrollAnimationElm[i].getBoundingClientRect().top + triggerMargin) {
-//       scrollAnimationElm[i].classList.add('active');
-//     } else {
-//       scrollAnimationElm[i].classList.remove('active');
-//     }
-//   }
-// }
-// window.addEventListener('load', scrollAnimationFunc);
-// window.addEventListener('scroll', scrollAnimationFunc);
-
-// ふわっとでるやつ　========================
-function showElementAnimation() {
-
-  let element = document.querySelectorAll('.slide_in');
-  if (!element) return; // 要素がなかったら処理をキャンセル
-
-  let showTiming = window.innerHeight > 768 ? 200 : 80; // 要素が出てくるタイミングはここで調整
-  let scrollY = window.pageYOffset; //スクロール量を取得
-  let windowH = window.innerHeight; //ブラウザウィンドウのビューポート(viewport)の高さを取得
-  for (let i = 0; i < element.length; i++) {
-    let elemClientRect = element[i].getBoundingClientRect();
-    let elemY = scrollY + elemClientRect.top;
-  if (scrollY + windowH - showTiming > elemY) {
-    element[i].classList.add('active');
-  } else if (scrollY + windowH < elemY) {
-      // 上にスクロールして再度非表示にする場合はこちらを記述
-    element[i].classList.remove('active');
+class ScllOb {
+  constructor(els, rootMargin, threshold) {
+    this.els = document.querySelectorAll(els);
+    const options = {
+      root: null,
+      rootMargin: rootMargin,
+      threshold: threshold
+    };
+    this._init();
+  }
+  _init() {
+    const callback = function (changes) {
+      changes.forEach(change => {
+        if (change.isIntersecting) {
+          change.target.classList.add('active');
+        } else {
+          change.target.classList.remove('active');
+        }
+      })
     }
+    const obs = new IntersectionObserver(callback.bind(this), this.options)
+    this.els.forEach(img => obs.observe(img));
   }
 }
-showElementAnimation();
-window.addEventListener('scroll', showElementAnimation);
-// ふわっとここまで　===========================================
+
+document.addEventListener('DOMContentLoaded', function () {
+  const elem = '.slide_in';
+  const rm = '-30% 0px';
+  const ths = 0;
+
+  const cd = new ScllOb(elem, rm, ths);
+})
