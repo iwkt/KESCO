@@ -562,6 +562,14 @@
   background: #007aff;
 }
 
+.swiper-slide img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  /* IE: not support */
+  width: 100%;
+  height: 100%;
+}
+
 .white_btn {
   text-align: center;
 }
@@ -605,22 +613,13 @@
   line-height: 1.5;
 }
 
-.abc {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-@media (min-width: 600px) {
+@media (max-width: 768px) {
   .whtnew__text {
     text-align: left;
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 769px) {
   .cth__copy__container {
     margin-bottom: 50px;
   }
@@ -649,9 +648,6 @@
   }
   .cth__copy__bk {
     top: 0;
-  }
-  .cth__copy__bk_area {
-    position: relative;
   }
   .cth__copy__text {
     width: 100%;
@@ -685,12 +681,6 @@
   }
   .fa-envelope {
     padding-bottom: 0;
-    display: block;
-    color: #fff;
-  }
-  .contactus__mail .fa-envelope {
-    display: inline;
-    color: #0078ff;
   }
   .slide_in.sr.active {
     -webkit-transform: translateX(20vw);
@@ -734,9 +724,6 @@
   .pc__picture__text {
     border: none !important;
   }
-  .panel__picture img {
-    height: 33vw;
-  }
   .picture {
     position: relative;
     color: #fff;
@@ -771,28 +758,38 @@
   .pictures div {
     border: 1px solid #fff;
   }
-  .pc__hdr__mail {
-    background-color: #0078ff;
-  }
-  .pc__hdr__mail i {
-    font-size: 50px;
-    padding: 20px;
-    margin: 0;
-  }
-  .pc__hdr__logo img {
-    margin-left: 30px;
-    width: 150px !important;
-  }
-  .recruit__slider__div {
-    width: auto !important;
-  }
-  .recruit__slider__link {
-    display: inline-block;
+  .recruit__slider__div img {
     padding: 0;
-    width: 44vw;
-  }
-  .recruit__slider__link img {
-    padding: 0 20px;
+    width: 60%;
   }
 }
-/*# sourceMappingURL=style.css.map */
+
+.pc__hdr__mail {
+  background-color: #0078ff;
+}
+
+.pc__hdr__mail i {
+  font-size: 50px;
+  padding: 20px;
+  margin: 0;
+}
+
+.pc__hdr__logo img {
+  margin-left: 30px;
+  width: 150px !important;
+}
+
+.fa-envelope {
+  display: block;
+  color: #fff;
+}
+
+.abc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/*# sourceMappingURL=style1.css.map */
