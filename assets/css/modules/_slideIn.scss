@@ -1,0 +1,28 @@
+//slide_in ===========================
+$pattern: (
+  "su": translateY(100px),
+  "sl": translateX(-99%),
+  "sr": translateX(100%),
+  "sd": translateY(-100px)
+);
+
+@each $key, $value in $pattern {
+  .slide_in.#{$key} {
+    transform: $value;
+    @include slide_in();
+      opacity: 0;
+    &.active {
+      opacity: 1;
+      transform: none;
+    }
+  }  
+}
+
+// .slide_in.su {
+//   opacity: 0;
+//   transition-delay: 0.5s;
+//   &.active {
+//     opacity: 1;
+//     transform: none;
+//   }
+// }

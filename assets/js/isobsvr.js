@@ -20,5 +20,3 @@ function showIntersect(changes,observer) {
         }
     });
 }
-
-

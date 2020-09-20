@@ -23,10 +23,10 @@ class ScllOb {
   }
 }
 
-document.addEventListener('DOMContentLoaded', function () {
+// document.addEventListener('DOMContentLoaded', function () {
   const elem = '.slide_in';
   const rm = '-30% 0px';
   const ths = 0;
 
-  const cd = new ScllOb(elem, rm, ths);
-})
+
+// })

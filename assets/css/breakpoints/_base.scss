@@ -109,21 +109,29 @@ body {
   }
 }
 
-.company__inner {
-  position: relative;
-}
-.company__img {
-  background-image: url(../../../assets/images/top_company-bg_xs.jpg);
-  background-repeat: no-repeat;
-  background-position: center  13%;
-  background-size: cover;
-  width: 100%;
-  &::before {
-    content: "";
-    display: block;
-    padding-top: 60%;
+.company {
+  &__inner {
+    position: relative;
+  }
+  &__img {
+    background-image: url(../../../assets/images/top_company-bg_xs.jpg);
+    background-repeat: no-repeat;
+    background-position: center  13%;
+    background-size: cover;
+    width: 100%;
+    &::before {
+      content: "";
+      display: block;
+      padding-top: 60%;
+    }
+  }
+  &__ttl {
+    @extend .lts-sm;
+    white-space: nowrap;
   }
 }
+
+
 .footer {
   &__bnrs {
     background-color: #126d9c;
@@ -209,7 +217,7 @@ body {
 }
 
 .main__ttl {
-  font-size: 32px;
+  font-size: 32px !important;
   white-space: nowrap;
   @extend .lts-md;
 }
@@ -308,7 +316,7 @@ body {
 
 .sub__ttl {
   font-family: "游明朝 Light", 游明朝体, YuMincho, 游明朝, "Yu Mincho", Georgia, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN W3", HiraMinProN-W3, "ヒラギノ明朝 ProN", "Hiragino";
-  font-size: 32px;
+  font-size: 32px !important;
   margin: 7vw 0;
   line-height: 1.2em;
   @extend .lts-md;
@@ -365,7 +373,7 @@ body {
     width: 100%;
     height: calc(100% - 50px);
     bottom: 0;
-    right: 100%;
+    right: -100%;
     background: linear-gradient(-65deg,#0078ff,#69ddff); 
     transition: all .5s ease;
   }

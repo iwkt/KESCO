@@ -15,5 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     new MobileMenu();
+    
+    new ScllOb(elem, rm, ths);
 
 });
