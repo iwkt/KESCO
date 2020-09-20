@@ -1,24 +1,19 @@
-const options = {
-    root: null,
-    rootMargin: '-30% 0px',
-    threshold: 0
-};
+document.addEventListener('DOMContentLoaded', function () {
 
-const obs = new IntersectionObserver(showIntersect, options);
-
-const slideIn = document.querySelectorAll('.slide_in');
-slideIn.forEach(sa => obs.observe(sa));
-
-
-function showIntersect(changes,observer) {
-    changes.forEach(change => {
-        if (change.isIntersecting) {
-            change.target.classList.add('active');
-            observer.unobserve(change.target);
+    const header = document.querySelector('.header');
+    const _navAnimation = function (el, inview) {
+        if (inview) {
+            header.classList.remove('triggered');
         } else {
-            change.target.classList.remove('active');
+            header.classList.add('triggered');
         }
-    });
-}
+
+    };
+
+    const so = new ScrollObserver('.nav-trigger', _navAnimation, { once: false });
 
 
+
+    new MobileMenu();
+
+});

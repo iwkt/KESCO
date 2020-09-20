@@ -1,4 +1,4 @@
-let swiper1 = new Swiper('.mbl_swiper_top', {
+let swiper = new Swiper('.hero_slider', {
   // 以下にオプションを設定
   loop: true, //最後に達したら先頭に戻る
   autoHeight: false,

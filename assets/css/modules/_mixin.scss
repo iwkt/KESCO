@@ -1,0 +1,27 @@
+@mixin acd_base (
+  $transition: 0.4s
+  ) {
+    height: 0;
+    opacity: 0;
+    transform-origin: top;
+    overflow: hidden;
+    visibility: hidden;
+    transition: all $transition ease-out;  
+}
+
+@mixin acd_inview () {
+  opacity: 1;
+  visibility: visible;
+}
+
+@mixin slide_in ($time:0.7s) {
+  // opacity: 0;
+  transition: all $time cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
