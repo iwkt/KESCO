@@ -18,4 +18,6 @@ document.addEventListener('DOMContentLoaded', function () {
     
     new ScllOb(elem, rm, ths);
 
+    new ChangeImage('.thumb','#bigimg');
+
 });

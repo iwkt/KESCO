@@ -24,12 +24,37 @@
             </div>
             <nav class="pc__nav">
               <!-- <div class="pc__nav__logo col-5-middle"><img src="./assets/images/logo.png" alt=""></div> -->
-              <ul class="abc">
+              <ul class="pc__nav__ul">
                 <li class="pc__nav__li"><a href="#">KESCOの強み</a></li>
-                <li class="pc__nav__li"><a href="#">事業内容</a></li>
+                <li class="pc__nav__li hvr">
+                  <a href="#">事業内容 ▼</a>
+                  <div class="hover__window serv_contents grid-center">
+                    <ul class="hover__items col-11">
+                      <li class="hover__item col-middle ">
+                        <a class="hover__btn" href="#">事業内容一覧</a>
+                      </li>
+                      <li class="hover__item col-middle"><a  class="hover__btn"href="#">バルブのメンテナンス</a></li>
+                      <li class="hover__item col-middle"><a  class="hover__btn"href="#">エンジニアリング</a></li>
+                      <li class="hover__item col-middle"><a  class="hover__btn"href="#">部品の供給</a></li>
+                      <li class="hover__item col-middle"><a  class="hover__btn"href="#">技術者派遣</a></li>
+                      <li class="hover__item col-middle"><a  class="hover__btn"href="#">製造補助</a></li>
+                      <li class="hover__item col-middle"><a  class="hover__btn"href="#">建造物のメンテナンス</a></li>
+                    </ul>
+                  </div>
+                </li>
                 <li class="pc__nav__li"><a href="#">部品の紹介</a></li>
                 <li class="pc__nav__li"><a href="#">会社情報</a></li>
-                <li class="pc__nav__li"><a href="#">採用情報</a></li>
+                <li class="pc__nav__li hvr">
+                  <a href="#">採用情報 ▼</a>
+                  <div class="hover__window rec-contents grid-center">
+                    <ul class="hover__items col-11">
+                      <li class="hover__item col-middle "><a class="hover__btn" href="#">代表メッセージ</a></li>
+                      <li class="hover__item col-middle"><a  class="hover__btn"href="#">人を知る</a></li>
+                      <li class="hover__item col-middle"><a  class="hover__btn"href="#">研修・資格支援制度</a></li>
+                      <li class="hover__item col-middle"><a  class="hover__btn"href="#">ラーメン食べ放題</a></li>
+                    </ul>
+                  </div>
+                </li>
                 <li class="pc__nav__li"><a href="#">新着情報</a></li>
                 <li class="pc__nav__li"><a href="#"></a></li>
                 <li class="pc__nav__li">
@@ -42,7 +67,6 @@
                 </li>
               </ul>
             </nav>
-
             <!-- hamburger menu ここから-->
             <div class="mbl__nav">
               <a id="navOpen" class="nav_open">
@@ -53,7 +77,6 @@
             </div>
             <!-- hamburger menu ここまで-->
           </div>
-
         </header>
         <div id="Content" class="content">
           <div class="hero mb-md">
@@ -82,6 +105,7 @@
                 <div class="swiper-pagination"></div>
             </div>
           </div><!-- hero-->
+
           <section id="Strong" class="strong__inner text__bk mb-10 slide_in">
             <div class="strong__container">
               <div class="strong__item">
@@ -96,7 +120,7 @@
                 <p class="strong__text text__article mb-md left">私たちはKITZグループ会社として、バルブのメンテナンス・エンジニアリングに関わるサービスを提供しています。特定建設業（管工事業）、 労働者派遣事業 、 一般建設業（塗装工事業・防水工事業・内装仕上工事業・電気工事業）の許可を取得しています。
                 </p>
                 <div class="white__btn pd-lg">
-                  <a  class="btn" href="#">KESCOの強み</a> 
+                  <a class="hover__btn btn" href="#">KESCOの強み</a> 
                 </div>
               </div>
             </div>
@@ -113,93 +137,99 @@
             </div>
           </section>
           <section id="Image" class="mb-md">
-            <ul class="image__inner slide_in su">
-              <li class="image__item">
+            <ul class="image__inner slide_in su grid">
+               <!-- <div id="bigimg" class="image__bgi"></div> -->
+              <img id="bigimg" src="./assets/images/home-service__btn01_1x.jpg" class="image__bgi">
+              <li class="image__item col-6_sm-12 thumb" data-image="./assets/images/home-service__btn01_1x.jpg">
                 <a href="#">
-                    <picture>
-                      <source media="(min-width:768px )" srcset="./assets/images/home-service__btn01_1x.jpg">
-                      <img src="./assets/images/home-service__btn01_xs.jpg" alt="">
-                    </picture>
-                    <div class="image__text">
-                      <p class="font-md">バルブのメンテナンス</p>
-                      <p class="font-sm">驚きの<span>対応力</span> </p>
-                    </div>
-                  </a>
-                </li>
-              <li class="image__item">
+                  <picture>
+                    <source media="(min-width:768px )" srcset="./assets/images/home-service__btn01_1x.jpg">
+                    <img src="./assets/images/home-service__btn01_xs.jpg" alt="">
+                  </picture>
+                  <div class="image__text">
+                    <p class="font-md">バルブのメンテナンス</p>
+                    <p class="font-sm">驚きの<span>対応力</span> </p>
+                  </div>
+                </a>
+              </li>
+              <li class="image__item col-6_sm-12 thumb" data-image="./assets/images/home-service__btn02_1x.jpg">
                 <a href="#">
-                    <picture>
-                      <source media="(min-width:768px )" srcset="./assets/images/home-service__btn02_1x.jpg">
-                      <img src="./assets/images/home-service__btn02_xs.jpg" alt="">
-                    </picture>
-                    <div class="image__text">
-                      <p class="font-md">エンジニアリング</p>
-                      <p class="font-sm">驚きの<span>技術力と提案力</span> </p>
-                    </div>
-                  </a>
-                </li>
-              <li class="image__item">
+                  <picture>
+                    <source media="(min-width:768px )" srcset="./assets/images/home-service__btn02_1x.jpg">
+                    <img src="./assets/images/home-service__btn02_xs.jpg" alt="">
+                  </picture>
+                  <div class="image__text">
+                    <p class="font-md">エンジニアリング</p>
+                    <p class="font-sm">驚きの<span>技術力と提案力</span> </p>
+                  </div>
+                </a>
+              </li>
+              <li class="image__item col-3_sm-12 thumb" data-image="./assets/images/home-service__btn03_1x.jpg">
                 <a href="#">
-                    <picture>
-                      <source media="(min-width:768px )" srcset="./assets/images/home-service__btn03_1x.jpg">
-                      <img src="./assets/images/home-service__btn03_xs.jpg" alt="">
-                    </picture>
-                    <div class="image__text">
-                      <p class="font-md">技術者派遣</p>
-                      <p class="font-sm">驚きの<span>指導力</span> </p>
-                    </div>
-                  </a>
-                </li>
-              <li class="image__item">
+                  <picture>
+                    <source media="(min-width:768px )" srcset="./assets/images/home-service__btn03_1x.jpg">
+                    <img src="./assets/images/home-service__btn03_xs.jpg" alt="">
+                  </picture>
+                  <div class="image__text">
+                    <p class="font-md">技術者派遣</p>
+                    <p class="font-sm">驚きの<span>指導力</span> </p>
+                  </div>
+                </a>
+              </li>
+              <li class="image__item col-3_sm-12 thumb" data-image="./assets/images/home-service__btn04_1x.jpg">
                 <a href="#">
-                    <picture>
-                      <source media="(min-width:768px )" srcset="./assets/images/home-service__btn04_1x.jpg">
-                      <img src="./assets/images/home-service__btn04_xs.jpg" alt="">
-                    </picture>
-                    <div class="image__text">
-                      <p class="font-md">部品の供給</p>
-                      <p class="font-sm">驚きの<span>短納期</span></p>
-                    </div>
-                </li>
-              <li class="image__item">
+                  <picture>
+                    <source media="(min-width:768px )" srcset="./assets/images/home-service__btn04_1x.jpg">
+                    <img src="./assets/images/home-service__btn04_xs.jpg" alt="">
+                  </picture>
+                  <div class="image__text">
+                    <p class="font-md">部品の供給</p>
+                    <p class="font-sm">驚きの<span>短納期</span></p>
+                  </div>
+                </a>
+              </li>
+              <li class="image__item col-3_sm-12 thumb" data-image="./assets/images/home-service__btn05_1x.jpg">
                 <a href="#">
-                    <picture>
-                      <source media="(min-width:768px )" srcset="./assets/images/home-service__btn05_1x.jpg">
-                      <img src="./assets/images/home-service__btn05_xs.jpg" alt="">
-                    </picture>
-                    <div class="image__text">
-                      <p class="font-md">製造補助</p>
-                      <p class="font-sm">驚きの<span>適応力</span></p>
-                    </div>
-                  </a>
-                </li>
-              <li class="image__item">
+                  <picture>
+                    <source media="(min-width:768px )" srcset="./assets/images/home-service__btn05_1x.jpg">
+                    <img src="./assets/images/home-service__btn05_xs.jpg" alt="">
+                  </picture>
+                  <div class="image__text">
+                    <p class="font-md">製造補助</p>
+                    <p class="font-sm">驚きの<span>適応力</span></p>
+                  </div>
+                </a>
+              </li>
+              <li class="image__item col-3_sm-12 thumb" data-image="./assets/images/home-service__btn06_1x.jpg">
                 <a href="#">
-                    <picture>
-                      <source media="(min-width:768px )" srcset="./assets/images/home-service__btn06_1x.jpg">
-                      <img src="./assets/images/home-service__btn06_xs.jpg" alt="">
-                    </picture>
-                    <div class="image__text">
-                      <p class="font-md">建造物のメンテナンス</p>
-                      <p class="font-sm">驚きの<span>コストと対応力</span> </p>
-                    </div>
-                  </a>
-                </li>
-    
+                  <picture>
+                    <source media="(min-width:768px )" srcset="./assets/images/home-service__btn06_1x.jpg">
+                    <img src="./assets/images/home-service__btn06_xs.jpg" alt="">
+                  </picture>
+                  <div class="image__text">
+                    <p class="font-md">建造物のメンテナンス</p>
+                    <p class="font-sm">驚きの<span>コストと対応力</span> </p>
+                  </div>
+                </a>
+              </li>
             </ul>
           </section>
           <section id="Parts" class="parts__container mb-10">
-            <div class="parts__inner slide_in su">
-              <a href="#">
-                <div class="parts__image">
-                  <img src="./assets/images/top_parts-img_xs.jpg" alt="">
+            <div class="parts__inner grid slide_in su">
+              <!-- <div class="col-11 grid"> -->
+                <div class="parts__image col-6_sm-12">
+                  <a href="#">
+                    <img src="./assets/images/top_parts-img_md.jpg" alt="">
+                  </a>
                 </div>
-                <div class="parts__text">
-                  <div class="main__ttl mb-sm">PARTS</div>
-                  <p class="sm__ttl font-sm">部品の紹介</p>
+                <div class="parts__text col-6_sm-12">
+                  <a href="#">
+                    <div class="main__ttl mb-sm">PARTS</div>
+                    <p class="sm__ttl font-sm">部品の紹介</p>
+                  </a>
                 </div>
-              </a>
-            </div>
+              </div>
+            <!-- </div> -->
           </section>
           <section id="Recruit" class="text__bk mb-10  slide_in">
               <div class="recruit__container">
@@ -215,7 +245,7 @@
                   <p class="recruit__article text__article mb-md left">各地のサービス拠点で営業・メンテナンス要員を募集しております。バルブの知識・メンテナンス技術研修・資格習得制度で社員の成長をサポートします。
                   </p>
                   <div class="white__btn pd-lg">
-                    <a class="btn" href="#">採用情報を見る</a>
+                    <a class="hover__btn btn" href="#">採用情報を見る</a>
                   </div>
                 </div>
                 <div id="RecruitSlider" class="recruit__slider slide_in su active">
@@ -282,7 +312,7 @@
                 </li>
               </ul>
               <div class="whatnew__btn slide_in su">
-                <a class="btn font-sm" href="#">全ての新着情報を見る</a>
+                <a class="hover__btn btn" font-sm" href="#">全ての新着情報を見る</a>
               </div>
             </div>
           </section>
@@ -296,7 +326,7 @@
                       <p class="company__ttl font-lg slide_in su">COMPANY OVERVIEW</p>
                       <p class="sm_ttl font-sm mb-sm slide_in su">会社情報</p>
                       <div class="white__btn slide_in su">
-                        <object><a class="btn">会社情報を見る</a></object>
+                        <object><a class="hover__btn btn">会社情報を見る</a></object>
                       </div>
                     </div>
                   </div>
@@ -409,6 +439,7 @@
     <script src="./assets/js/img-zoom.js"></script>
     <script src="./assets/js/swiper.js"></script>
     <script src="./assets/js/swiper_local.js"></script>
+    <script src="./assets/js/lib/changeImage.js"></script>
     <script src="./assets/js/lib/scroll.js"></script>
     <script src="./assets/js/scroll_my.js"></script>
     <script src="./assets/js/main.js"></script>

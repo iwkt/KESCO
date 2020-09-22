@@ -2,6 +2,11 @@ body {
   font-family: noto,'Noto Sans', "ヒラギノ角ゴ Pro W3",Hiragino Kaku Gothic Pro,"メイリオ",Meiryo,"ＭＳ Ｐゴシック",MS PGothic,"Font Awesome 5 Free",sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 * {
   font-feature-settings: "palt" 1;
 }
@@ -78,12 +83,12 @@ body {
 
 // ---------------------------------------------
 
-body {
+// body {
 
-  &.active {
-    position: fixed;
-  }
-}
+//   &.active {
+//     position: fixed;
+//   }
+// }
 
 #Content {
   padding-top: $hdr_mbl_height;
@@ -177,11 +182,78 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @extend .content-width;
+    width: 100%;
+    margin: 0 0 0 5%;
+    
+    // @extend .content-width;
   }
 }
 
+.hover {
+  &__btn {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    &:hover {
+      color: #fff;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      height: 100%;
+      width: 100%;
+      background: $c_lblue;
+      opacity: 0;
+      z-index: -1;
+      transition: all 0.3s ease;
+    }
+    &:hover::after {
+      left: 0;
+      opacity: 1;
+    }
+  }
+  &__item {
+    color: $c_mosg;
+    background: #fff;
+    margin-right: 20px;
+    & a {
+      @extend .font-sm;
+      display: block;
+      padding: 10px 10px;
+    }
+  }
+  &__items {
+    display: flex;
+    justify-content: center;
+  }
+  &__window {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    height: 0px;
+    width: 100%;
+    transform-origin: top;
+    transition: all 0.3s ease-out;
+    
+  }
+}
+
+.hvr:hover > .hover__window {
+  opacity: 1;
+  height: 100px;
+  visibility: visible;
+  background: rgba(9,105,153,0.8);
+}
+
 .image {
+  &__bgi {
+    display: none;
+  }
+
   &__item {
     position: relative;
     & > a {
@@ -196,6 +268,7 @@ body {
     text-align: center;
     color: #fff;
     font-weight: 700;
+    width: 100%;
     & > p:first-child {
       margin-bottom: 10px;
     }
@@ -250,10 +323,6 @@ body {
   }
 }
 
-
-// .mbl__menu {
-// }
-
 .pc__nav {
   display: none;
 
@@ -262,13 +331,17 @@ body {
     align-items: center;
     padding: 0;
     margin: 0;
-    // justify-content: space-between;
   }
   &__li {
     margin-left: 20px;
     color: $c_bg;
     font-size: 14px;
     font-weight: 700;
+    & > a {
+      display: inline-block;
+      padding: 42px 10px;
+    }
+    // padding: 42px 0;
   }
   &__mail {
     width: $hdr_pc_height;
@@ -295,7 +368,7 @@ body {
     width: 85%;
   }
   &__image {
-    height: 41vw;
+    // height: 41vw;
     border: 1px solid gray;
     & > img {
       object-fit: cover;
@@ -305,12 +378,17 @@ body {
   }
   &__text {
     border: 1px solid #0078ff;
-    height: 31vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     color: $c_lblue;
+    & a {
+      display: block;
+      padding: 15% 0;
+
+    }
+    // height: 31vw;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
   }
 }
 
@@ -350,6 +428,7 @@ body {
 .slide__image {
   width: 90%;
   overflow: hidden;
+  max-width: 886px;
   & > img {
     transform: scale(1.2);
   }
@@ -357,6 +436,9 @@ body {
 .strong {
   &.active::before {
     right: 0;
+  }
+  &__item {
+    max-width: 888px;
   }
   
   &__container {
@@ -442,8 +524,6 @@ body {
 
 }
 
-
-
 .white__btn {
   margin: auto;
   text-align: center;
@@ -452,8 +532,3 @@ body {
     border: 1px solid #fff;
   }
 }
-
-
-
-
-
