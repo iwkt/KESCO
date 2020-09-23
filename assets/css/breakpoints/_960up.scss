@@ -210,12 +210,20 @@ font-size: 40px!important;
  
 .services {
   &__inner {
-  width: 90%;
-  margin: auto!important;
+    width: 90%;
+    margin: auto!important;
+  }
+  &__item {
+    & p {
+      text-align: right;
+    }
   }
     &__container {
       display: flex;
       justify-content: center;
+    }
+  &__text{
+    margin-left: 40px;
     }
   }
 

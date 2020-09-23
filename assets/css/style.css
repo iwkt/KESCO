@@ -989,6 +989,9 @@ a {
     width: 90%;
     margin: auto !important;
   }
+  .services__item p {
+    text-align: right;
+  }
   .services__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -996,6 +999,9 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .services__text {
+    margin-left: 40px;
   }
   .strong__inner {
     margin-bottom: 200px !important;
