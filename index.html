@@ -6,8 +6,8 @@
     <meta name="viewport"content="width=device-width, initial-scale=1.0">
     <title>KESCO</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/reset_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" href="./assets/css/vendors/bootstrap-reboot.css"> -->
     <link rel="stylesheet" href="./assets/css/vendors/swiper/swiper.css">
     <link href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" rel="stylesheet">
@@ -231,7 +231,7 @@
               </div>
             <!-- </div> -->
           </section>
-          <section id="Recruit" class="text__bk mb-10  slide_in">
+          <section id="Recruit" class="text__bk__rec mb-10  slide_in">
               <div class="recruit__container">
                 <div class="recruit__item">
                   <div id="RecruitImage" class="slide__image slide_in sl mb-10">
@@ -248,25 +248,25 @@
                     <a class="hover__btn btn" href="#">採用情報を見る</a>
                   </div>
                 </div>
-                <div id="RecruitSlider" class="recruit__slider slide_in su active">
+                <div id="RecruitSlider" class="recruit__slider slide_in su">
                   <!-- スライダーのメインコンテナの div 要素 -->
-                  <div class="swiper-container recruit_slider  slide_in su">
+                  <div class="swiper-container  recruit_slider slide_in su">
                     <!-- ラッパーの（スライドを囲む） div 要素 -->
                     <div class="swiper-wrapper">
                       <!-- それぞれのスライドの div 要素 -->
-                      <div class="swiper-slide recruit__slide">
+                      <div class="swiper-slide hover-dark recruit__slider__area">
                         <a href="#" class="recruit__slider__link">
                           <img src="./assets/images/jobs-jpg.jpg" alt="" class="recruit__slide__img mb-sm">
                           <p class="recruit__linkname">代表メッセージ</p>
                         </a>
                       </div>
-                      <div class="swiper-slide recruit__slide">
+                      <div class="swiper-slide hover-dark recruit__slider__area">
                         <a href="#" class="recruit__slider__link">
                           <img src="./assets/images/top_recruit-other-img02_1x.jpg" alt="" class="recruit__slide__img mb-sm">
                           <p class="recruit__linkname">人を知る</p>
                         </a>
                       </div>
-                      <div class="swiper-slide recruit__slide">
+                      <div class="swiper-slide hover-dark recruit__slider__area">
                         <a href="#" class="recruit__slider__link">
                           <img src="./assets/images/top_recruit-other-img03_1x.jpg" alt="" class="recruit__slide__img mb-sm">
                           <p class="recruit__linkname">募集要項</p>
@@ -336,13 +336,13 @@
           </section>
           <section id="Contact_us" class="contactus slide_in su">
             <div class="grid-center">
-              <div class="contactus__tel col-6_sm-12">
+              <div class="contactus__tel hover__btn col-6_sm-12">
                 <a class="contactus__link" href="#">
                   <p class="font-md mb-sm">お電話での問い合わせはこちら</p>
                   <i class="fas fa-phone-alt"></i><span class="main__ttl">047-452-0585</span>
                 </a>
               </div>
-              <div class="contactus__mail col-6_sm-12">
+              <div class="contactus__mail hover__btn col-6_sm-12">
                 <a class="contactus__link" href="#">
                   <p class="font-md mb-sm">その他の問い合わせはこちら</p>
                   <i class="fas fa-envelope"></i><span class="main__ttl">CONTACT US</span>
@@ -351,36 +351,76 @@
             </div>
           </section>
           <footer id="Footer" class="footer">
-              <div class="footer__logo grid-center">
-                <img src="./assets/images/footer-logo_md.png" alt="" class="footer__logo__img col-5">
-              </div>
-              <div class="footer__bnrs grid-center">
-                <div class="col-10 grid-center">
-                  <div class="footer__bnr col-6">
-                    <a href="#">
-                      <img src="./assets/images/footer-banner01_1x.jpg" alt="">
-                    </a>
-                  </div>
-                  <div class="footer__bnr col-6">
-                    <a href="#">
-                      <img src="./assets/images/footer-banner02_1x.jpg" alt="">
-                    </a>
-                  </div>
-                  <div class="footer__bnr col-6">
-                    <a href="#">
-                      <img src="./assets/images/footer-banner03_1x.jpg" alt="">
-                    </a>
-                  </div>
-                  <div class="footer__bnr col-6">
-                    <a href="#">
-                      <img src="./assets/images/footer-banner04_1x.jpg" alt="">
-                    </a>
-                  </div>
+            <div class="footer__container">
+              <div class="footer__inner grid-center">
+                <div class="footer__logo col-3_xs-5"> 
+                  <img src="./assets/images/footer-logo_md.png" alt="" class="footer__logo">
+                </div>
+                <div class="col-3_xs-hidden">
+                  <ul class="footer__ttls" >
+                    <li class="footer__ttl" ><a href="#">トップページ</a></li>
+                    <li class="footer__ttl"><a href="#">KESCOの強み</a></li>
+                    <li class="footer__ttl"><a href="#">新着情報</a></li>
+                    <li class="footer__ttl"><a href="#">会社情報</a></li>
+                  </ul>
+                </div>
+                <div class="col-3_xs-hidden">
+                  <ul class="footer__ttls" >
+                    <li class="footer__ttl"><a class="mb-sm" href="#">事業内容</a>
+                      <ul>
+                        <li class="footer__ttl__chi"><a href="#">バルブのメンテナンス</a></li>
+                        <li class="footer__ttl__chi"><a href="#">エンジニアリング</a></li>
+                        <li class="footer__ttl__chi"><a href="#">技術者派遣</a></li>
+                        <li class="footer__ttl__chi"><a href="#">部品の供給</a></li>
+                        <li class="footer__ttl__chi"><a href="#">製造補助</a></li>
+                        <li class="footer__ttl__chi"><a href="#">建造物のメンテナンス</a></li>
+                      </ul>
+                    </li>
+                    <li class="footer__ttl"><a href="#">部品の紹介</a></li>
+                  </ul>
+                </div>
+                <div class="col-3_xs-hidden">
+                  <ul class="footer__ttls" >
+                    <li class="footer__ttl"><a class="mb-sm" href="#">採用情報</a>
+                      <ul>
+                        <li class="footer__ttl__chi"><a href="#">バルブのメンテナンス</a></li>
+                        <li class="footer__ttl__chi"><a href="#">エンジニアリング</a></li>
+                        <li class="footer__ttl__chi"><a href="#">技術者派遣</a></li>
+                        <li class="footer__ttl__chi"><a href="#">部品の供給</a></li>
+                      </ul>
+                    </li>
+                    <li class="footer__ttl"><a href="#">お問い合わせ</a></li>
+                  </ul>
                 </div>
               </div>
-              <div class="footer__copy">
-                <p>Copyright 2018- KITZ ENGINEERING SERVICE CO.,LTD.All Rights Reserver</p>
+            </div>
+            <div class="footer__bnrs grid-center">
+              <div class="col-10 grid-center">
+                <div class="footer__bnr col-3_xs-6">
+                  <a href="#">
+                    <img src="./assets/images/footer-banner01_1x.jpg" alt="">
+                  </a>
+                </div>
+                <div class="footer__bnr col-3_xs-6">
+                  <a href="#">
+                    <img src="./assets/images/footer-banner02_1x.jpg" alt="">
+                  </a>
+                </div>
+                <div class="footer__bnr col-3_xs-6">
+                  <a href="#">
+                    <img src="./assets/images/footer-banner03_1x.jpg" alt="">
+                  </a>
+                </div>
+                <div class="footer__bnr col-3_xs-6">
+                  <a href="#">
+                    <img src="./assets/images/footer-banner04_1x.jpg" alt="">
+                  </a>
+                </div>
               </div>
+            </div>
+            <div class="footer__copy">
+              <p>Copyright 2018- KITZ ENGINEERING SERVICE CO.,LTD.All Rights Reserver</p>
+            </div>
           </footer>
         </div>
       </div>

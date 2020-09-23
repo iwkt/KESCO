@@ -349,7 +349,7 @@ a {
   padding: 12px 0;
 }
 
-.content-width, .services__container, .whatnew__container {
+.content-width, .glorbal_container, .services__container, .whatnew__container {
   width: 90%;
   margin: 0 auto;
   max-width: 1400px;
@@ -412,6 +412,10 @@ a {
   padding: 1.5vw !important;
 }
 
+.footer__container {
+  background-color: #e1eaed;
+}
+
 .footer__copy {
   background-color: #091e4e;
   color: #fff;
@@ -421,10 +425,6 @@ a {
 }
 
 .footer__logo {
-  background-color: #e1eaed;
-}
-
-.footer__logo__img {
   padding: 8vw 0;
   height: 100%;
   width: 100%;
@@ -542,6 +542,7 @@ a {
 
 .image__item {
   position: relative;
+  border-top: 1px solid #fff;
 }
 
 .image__item > a {
@@ -574,10 +575,6 @@ a {
   margin-left: 2vw;
 }
 
-.image__item {
-  border-top: 1px solid #fff;
-}
-
 .logo {
   width: 100px;
 }
@@ -593,7 +590,6 @@ a {
   right: -100%;
   width: 100%;
   height: 100vh;
-  padding-top: 30px;
   overflow-y: scroll;
   z-index: 110;
   -webkit-transition: all 0.6s ease;
@@ -703,6 +699,13 @@ a {
   color: #fff;
 }
 
+.recruit__slider .swiper-slide img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .services__container {
   text-align: center;
   color: #015e8e;
@@ -732,11 +735,11 @@ a {
   z-index: 2;
 }
 
-.text__bk {
+.text__bk, .text__bk__rec {
   position: relative;
 }
 
-.text__bk::before {
+.text__bk::before, .text__bk__rec::before {
   content: '';
   position: absolute;
   width: 100%;
@@ -748,7 +751,7 @@ a {
   transition: all .5s ease;
 }
 
-.text__bk.active::before {
+.text__bk.active::before, .text__bk__rec.active::before {
   right: 0;
 }
 
@@ -825,13 +828,16 @@ a {
   .mb-10, .whatnew__ttl__inner {
     margin-bottom: 10vw !important;
   }
+  .mb-sm {
+    margin-bottom: 10px;
+  }
   .mb-md {
     margin-bottom: 50px !important;
   }
   .mb-lg {
     padding-bottom: 150px !important;
   }
-  .content-width, .services__container, .whatnew__container {
+  .content-width, .glorbal_container, .services__container, .whatnew__container {
     width: 80%;
     margin: 0 auto;
     max-width: 1400px;
@@ -842,6 +848,39 @@ a {
   #Content {
     padding-top: 100px;
   }
+  .company__inner .white__btn {
+    text-align: center;
+  }
+  .company__img {
+    background-image: url(../../../assets/images/top_company-bg_md.jpg);
+    background-repeat: no-repeat;
+    background-position: center  13%;
+    background-size: cover;
+    width: 100%;
+    height: 420px;
+  }
+  .footer__inner {
+    width: 80%;
+    margin: 0 auto !important;
+    padding: 40px 0 !important;
+  }
+  .footer__logo {
+    width: 80%;
+  }
+  .footer__ttl {
+    padding-left: 50px;
+    font-weight: bold;
+  }
+  .footer__ttl > a {
+    display: inline-block;
+  }
+  .footer__ttl:not(:nth-of-type(1)) {
+    padding-top: 30px;
+  }
+  .footer__ttl__chi {
+    font-size: 14px;
+    padding: 5px 0 5px 10px;
+  }
   .header {
     height: 100px;
   }
@@ -851,10 +890,11 @@ a {
   }
   .image__item {
     display: block;
-    height: calc(100vw*0.21429);
+    height: calc(100vw*0.212);
     border: 1px solid #fff;
     position: relative;
     overflow: hidden;
+    max-width: 1400px;
     z-index: 1;
   }
   .image__item::before {
@@ -909,6 +949,42 @@ a {
   .pc__nav {
     display: block;
   }
+  .recruit__slider__link {
+    display: block;
+    width: 400px;
+  }
+  .recruit__linkname {
+    color: #0078ff;
+  }
+  .recruit__slider__area {
+    width: 450px !important;
+  }
+  .recruit__slider .swiper-slide {
+    height: 350px;
+    position: relative;
+  }
+  .recruit__slider .swiper-slide img {
+    width: 100%;
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .hover-dark::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 300px;
+    width: 400px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .hover-dark:hover::before {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .recruit_slider {
+    height: auto;
+  }
   .services__inner {
     width: 90%;
     margin: auto !important;
@@ -928,12 +1004,12 @@ a {
     max-width: 1080px;
     margin: 0 0 0 auto;
   }
+  .strong.swiper-pagination {
+    bottom: 5vw !important;
+  }
   .sub__ttl {
     font-size: 52px !important;
     letter-spacing: .15em;
-  }
-  .swiper-pagination {
-    bottom: 5vw !important;
   }
   .text__article {
     line-height: 1.8em;
@@ -948,6 +1024,11 @@ a {
     width: 55%;
     top: 80px;
     left: 45vw;
+  }
+  .text__bk__rec::before {
+    top: 50px;
+    width: 90%;
+    height: 700px;
   }
   .btn {
     text-align: center;

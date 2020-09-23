@@ -13,6 +13,9 @@
 .mb-10 {
   margin-bottom: 10vw !important;
 }
+.mb-sm {
+  margin-bottom: 10px;
+}
 .mb-md {
   margin-bottom: 50px!important;
 }
@@ -36,6 +39,53 @@ picture {
   padding-top: $hdr_pc_height;
 }
 
+.company {
+  &__inner {
+    & .white__btn {
+      text-align: center;
+    }
+  }
+  &__img {
+    background-image: url(../../../assets/images/top_company-bg_md.jpg);
+    background-repeat: no-repeat;
+    background-position: center  13%;
+    background-size: cover;
+    width: 100%;
+    height: 420px;
+    // &::before {
+    //   content: "";
+    //   display: block;
+    //   padding-top: 60%;
+    // }
+  }
+}
+
+.footer {
+  &__inner {
+    width: 80%;
+    margin: 0 auto!important;
+    padding: 40px 0 !important;
+    // text-align: center;
+  }
+  &__logo {
+    width: 80%;
+  }
+  &__ttl {
+    padding-left: 50px;
+    font-weight: bold;
+    & > a {
+      display: inline-block;
+    }
+    &:not(:nth-of-type(1)) {
+      padding-top: 30px;
+    }
+    &__chi  {
+      font-size: 14px;
+      padding: 5px 0 5px 10px;
+    }
+  }
+}
+
 .header {
   height: $hdr_pc_height;
 }
@@ -44,23 +94,14 @@ picture {
   &__bgi {
     position: absolute;
     display: block;
-  //   background-image: url(../../../assets/images/home-service__btn01_1x.jpg);
-  //   background-position: center;
-  //   background-size: cover;
-  //   background-repeat: no-repeat;
-  //   width: 100%;
-  //   &::before {
-  //     display: block;
-  //     content: "";
-  //     padding-top: 50%;
-  //   }
   }
   &__item {
     display: block;
-    height: calc(100vw*0.21429);
+    height: calc(100vw*0.212);
     border: 1px solid #fff;
     position: relative;
     overflow: hidden;
+    max-width: 1400px;
     z-index: 1;
     &::before {
       content: "";
@@ -122,6 +163,51 @@ font-size: 40px!important;
   }
 }
 
+.recruit__slider__link {
+  display: block;
+  width: $width_400;
+}
+
+.recruit {
+  &__linkname {
+    color: $c_lblue;
+  }
+  &__slider {
+    &__area {
+      width: 450px!important;
+    }
+    & .swiper-slide {
+      height: 350px;
+      position: relative;
+      & img {
+        width: 100%;
+        height: $height_300;
+        object-fit: cover;
+
+      }
+    }
+  }
+}
+
+.hover-dark {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: $height_300;
+    width: $width_400;
+    transition: all 0.3s;
+  }
+  &:hover::before {
+    background-color: rgba(0 ,0, 0, 0.4);
+  }
+}
+
+.recruit_slider {
+  height: auto;
+}
+ 
 .services {
   &__inner {
   width: 90%;
@@ -141,18 +227,17 @@ font-size: 40px!important;
     max-width: 1080px;
     margin: 0 0 0 auto;
   }
+  &.swiper- {
+
+    &pagination {
+      bottom: 5vw !important;
+    }
+  }
 }
 
 .sub__ttl {
   font-size: 52px !important;
   letter-spacing: .15em;
-}
-
-.swiper- {
-
-  &pagination {
-    bottom: 5vw !important;
-  }
 }
 
 .text{
@@ -174,6 +259,15 @@ font-size: 40px!important;
   }
 }
 
+.text__bk__rec {
+
+  &::before {
+    top: 50px;
+    width: 90%;
+    height: 700px;
+  }
+}
+
 .btn {
   text-align: center;
   font-size: 18px;
@@ -181,192 +275,3 @@ font-size: 40px!important;
 .white__btn {
   text-align: right;
 } 
-// .cth__copy {
-//     &__container {
-//       margin-bottom: 50px;
-//     }
-//     &__slide {
-//       width: 73vw;
-//     }
-//   }
-// .contactus {
-//   &__link {
-//     padding: 70px 80px;
-//     & span {
-//       font-size: 38px;
-//     }
-//     & i {
-//       font-size: 38px;
-//     }
-//     & P {
-//       font-size: 20px;
-//     }
-//   }
-//   &__mail .contactus__link {
-//     border-left: none;
-//     border-top: 2px solid #69ddff;
-//   }
-// }
-// .cth__copy {
-//   & img {
-//     padding: 100px 0; 
-//     max-width: 100%;
-//   }
-//   &__bk {
-//     top: 0;
-//     &_area {
-//       position: relative;
-//     }
-//   }
-//   &__text {
-//     width: 100%;
-//     font-size: 15px;
-//     letter-spacing: .5rem;
-//     line-height: 1.5;
-//     margin-bottom: 3rem;
-//   }
-//   &__ttl {
-
-//     font-size: 34px;
-//     margin-bottom: 17px;
-//     margin-right: 50px;
-//     letter-spacing: .2rem;
-//     &_s {
-//       font-size: 15px;
-//       margin-right: 50px;
-//       margin-bottom: 3rem;
-//     }
-//     &__sub {
-//       font-size: 50px;
-//       letter-spacing: .6rem;
-//       margin-bottom: 3rem;
-//     }
-//   }
-//   &__wrapper {
-//     position: absolute;
-//     top: 200px;
-//     right: 5vw;
-//     width: 60%;
-//     margin: 0 auto;
-//   }
-// }
-// .fa-envelope {
-//   padding-bottom: 0;
-//   display: block;
-//   color: #fff;
-// }
-// .contactus__mail .fa-envelope {
-//   display: inline;
-//   color: #0078ff; 
-// }
-// .slide_in.sr.active {
-//   transform: translateX(20vw);  
-// }
-// .text__area {
-//   margin-top: 9vw;
-//   &__midasi {
-//     padding-right: 50px;
-//   }
-//   &__comment {
-//     font-size: 15px;
-//     margin: 0 50px 0 30px;
-//   }
-//   &__ttl  {
-//     font-size: 38px;
-//     margin-bottom: 15px;
-//     text-align: right;
-//     &__sub {
-//       font-size: 18px;
-//       text-align: right;
-//       padding-right: 120px;
-//     }
-//   }
-// }
-// .mbl__hdr {
-//   display: none;
-// }
-// .mbl__sldr1 {
-//   margin-bottom: 0;
-// }
-// .mbl__pict {
-//   display: none;
-// }
-// .white_btn {
-//     text-align: right;
-//   & a {
-//     font-size: 14px;
-//   }
-// }
-// .pc__picture {
-//   &__text {
-//     border: none !important;
-//   }
-// }
-// .panel__picture img {
-//   height: 33vw;
-// }
-// .picture {
-//   position: relative;
-//   color: #fff;
-//   text-align: center;
-//   &__text__main {
-//     font-size: 24px;
-//     margin-bottom: 10px;
-//   }
-//   &__text__sub {
-//     font-size: 20px;
-//   }
-// }
-// .pict {
-//   &__parent {
-//     position: relative;
-//   }
-//   &__chi {
-//     border: none!important;
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50% ,-50%);
-//     width: 100%;
-//   }
-// }
-// .pictures {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   & div {
-//     border: 1px solid #fff;
-//   }
-// } 
-
-// .pc__hdr {
-//   &__mail {
-//     background-color: #0078ff;
-//     & i {
-//       font-size: 50px;
-//       padding: 20px;
-//       margin: 0;
-//     }
-//   }
-//   &__logo {
-//     & img {
-//       margin-left: 30px;
-//       width: 150px!important;
-//     }
-//   }
-// }
-// .recruit__slider{
-//   &__div {
-//     width: auto !important;
-//   }
-//   &__link {
-//     display: inline-block;
-//     padding: 0;
-//     width: 44vw;
-//     & img {
-//       padding: 0 20px;
-//     }
-//   }
-// }
