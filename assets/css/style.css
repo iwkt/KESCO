@@ -888,13 +888,17 @@ a {
     position: absolute;
     display: block;
   }
+  .imageinner {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
   .image__item {
     display: block;
-    height: calc(100vw*0.212);
+    height: calc(100vw*0.213);
     border: 1px solid #fff;
     position: relative;
     overflow: hidden;
-    max-width: 1400px;
+    max-width: 700px;
     z-index: 1;
   }
   .image__item::before {
